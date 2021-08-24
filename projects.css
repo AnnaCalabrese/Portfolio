@@ -1,0 +1,124 @@
+/* GENERAL STYLING */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --dark: #2B2B28;
+    --beige: #B4A5A5;
+    --white: #EBEBE3;
+    --blue: hsl(171, 65%, 33%);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 8rem;   
+    margin-top: 30px;
+
+}
+p, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h1::after{
+    content: " ";
+    display: block;
+    max-width: 33rem;
+    height: 1.4rem;
+    background-color: var(--blue);
+    border-radius: 10px;
+    margin-top: -45px;      
+}
+.bottone{
+    margin: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: var(--dark);
+    transition: 0.3s;
+    border: white;
+}
+
+.bottone:hover{
+ background-color: var(--beige);
+}
+
+
+
+.carta{
+    border-radius: 10px;
+    width: 350px;
+    height: 320px;
+    background-color: var(--white);
+    margin: 30px 30px;
+}
+.immagine1 {
+    background-image: url(/img/fylo.png);
+    background-repeat: no-repeat;
+    height: 255px;
+    width: 100%;
+    background-size:cover ;
+}
+
+.immagine2 {
+    background-image: url(/img/clipboard.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 255px;
+    width: 100%;
+    background-size:cover ;
+}
+
+.immagine3 {
+    background-image: url(/img/sunnyside.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 255px;
+    width: 100%;
+    background-size:cover ;
+}
+
+.immagine4 {
+    background-image: url(/img/oldwebsite.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 255px;
+    width: 100%;
+    background-size:cover ;
+}
+
+
+.scritte{
+    margin-top:8px;
+}
+
+@media (max-width:650px){
+    h1 {
+        font-size: 4rem;
+    }
+    
+  h1::after {
+    content: " ";
+    display: block;
+    max-width: 25rem;
+    height: 1rem;
+    background-color: var(--blue);
+    border-radius: 10px;
+    margin-top: -25px;      
+    }
+
+
+}

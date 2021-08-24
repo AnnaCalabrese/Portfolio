@@ -1,0 +1,140 @@
+/* GENERAL STYLING */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --dark: #2B2B28;
+    --beige: #B4A5A5;
+    --white: #EBEBE3;
+    --blue: hsl(171, 65%, 33%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    font-size: 6rem;
+}
+h2, h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 4rem;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 2;
+    letter-spacing: 3px;
+}
+a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* HEADER SECTION */
+header {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+header h1 {
+    margin-top: -100px;
+}
+nav a {
+    margin-right: 10px;
+    color: var(--dark);
+}
+.nav-link {
+    color: var(--white);
+}
+.nav-link:hover{
+    color:var(--blue);
+}
+header p, a{
+    text-transform: uppercase;
+}
+nav{
+    background-color: var(--dark);
+}
+.bottone{
+    padding: 8px 20px;
+    margin: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: var(--dark);
+    transition: 0.3s;
+    border: white;
+    border-bottom: 5px solid hsl(171, 65%, 33%);
+}
+
+.bottone:hover{
+ background-color: hsl(171, 65%, 33%);
+
+}
+
+
+/* ABOUT & CONTACT FORM */
+.formEntry{
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+textarea {
+width: 450px;
+}
+
+.form-control:focus{
+    outline: none;
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+/*FOOTER*/
+footer{
+    background-color:var(--blue);
+}
+
+.icone, small{
+    color: var(--dark);
+    font-family: 'Montserrat', serif;
+    font-weight: 900; 
+}
+
+small a, .icone:hover{
+    color: var(--white);
+}
+
+small a, .icone{
+text-decoration: none;
+}
+small a:hover{
+    color: var(--dark);
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width:650px){
+    textarea {
+        width: 250px;
+    }
+    h1{
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+  
+} 
